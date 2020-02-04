@@ -4,6 +4,8 @@ const path = require('path');
 const dir = process.argv[2];
 const folder = 'txt';
 const newdir = dir + folder;
+const copyright = require("config.json");
+console.log(copyright);
 
 fs.copyFile('summary.js', dir + "summary.js", (err) =>{
   if (err) throw err;
